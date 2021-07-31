@@ -17,8 +17,7 @@ func aboutChannels() {
 	// which executes "concurrently" with the calling "goroutine"
 	go func() {
 		// your code goes here
-		for range ch {
-		}
+		<-ch
 	}()
 
 	//assert(__delete_me__) // we'll need to make room for the queue, or suffer deadlocks
